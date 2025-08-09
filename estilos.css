@@ -1,0 +1,183 @@
+/* --- Estilos generales (tu CSS combinado y ajustado) --- */
+  body {
+    background-color: #e0dede;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background-image: url('https://i.pinimg.com/736x/62/3f/51/623f51a5c61a7155e1d8687423d183e5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  h1.titulo-con-estilo {
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  /* Cards */
+  .card {
+    color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 12px rgba(5, 5, 5, 0.2);
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    cursor: default;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(8,8,8,0.3);
+  }
+  .card-verde {
+    background-image: url("https://i.pinimg.com/736x/2a/4b/6d/2a4b6d48bd2f4f0b79bae2c7bbfb9cfe.jpg");
+    color: white;
+  }
+  .card-amarilla {
+    background-image: url("https://cdn.eldestapeweb.com/eldestape/102024/1728414339421.webp?cw=800&ch=450&extw=jpg");
+    color: white;
+  }
+  .card-rosa {
+    background-image: url("https://i.pinimg.com/1200x/ae/b8/56/aeb85630c5e14582e7dd7a1e7a31df6e.jpg");
+    color: white;
+  }
+
+  .titulo-con-borde {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Botones de reservar */
+  .btn-reservar {
+    background-color: #c0392b;
+    color: rgb(248, 239, 239);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-reservar:hover {
+    background-color: green;
+  }
+
+  /* Ocultar todas las secciones menos la activa */
+  section {
+    display: none;
+  }
+  section.mostrar {
+    display: block;
+  }
+
+  /* Calendario y Formularios - estilo más limpio y compacto */
+  .calendario, .horarios, .formulario {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .dias-semana {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .dias-semana button {
+    flex: 1;
+    margin: 0 3px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+  }
+
+  .fechas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .fechas div {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .fechas div:hover {
+    background-color: #dfe6e9;
+  }
+  .fechas div.seleccionado {
+    background-color: #74b9ff !important;
+    color: white;
+    font-weight: bold;
+  }
+
+  .horarios button {
+    margin: 5px;
+    padding: 12px 20px;
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .horarios button:hover {
+    background-color: #74b9ff;
+  }
+
+  input, select {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  button.confirmar {
+    width: 90%;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    
+  }
+  button.confirmar:hover {
+    background-color: #219150;
+  }
+
+  p#mensaje {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+  }
+
+
+   
